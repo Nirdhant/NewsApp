@@ -24,7 +24,7 @@ import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import com.example.news_app.news.presentation.home_screen.components.HomeLazyColumn
 import com.example.news_app.news.presentation.home_screen.components.bottomNavigationItemList
-import com.example.news_app.ui.theme.NirdhantTheme
+import com.example.news_app.ui.theme.NewsTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -66,7 +66,7 @@ fun MainScreen(){
 @PreviewLightDark
 @Composable
 fun MainScreenPreview(){
-    NirdhantTheme {
+    NewsTheme {
         MainScreen()
     }
 }

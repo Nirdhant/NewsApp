@@ -1,8 +1,7 @@
-package com.example.nirdhant
-
-import org.junit.Test
+package com.example.news_app
 
 import org.junit.Assert.*
+import org.junit.Test
 
 /**
  * Example local unit test, which will execute on the development machine (host).

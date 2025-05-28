@@ -1,11 +1,11 @@
-package com.example.NewsApp.news.presentation.setting_screen.components
+package com.example.news_app.news.presentation.setting_screen.components
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import com.example.NewsApp.R
+import com.example.news_app.R
 import com.example.tooglebutton.utils.Theme
 
 

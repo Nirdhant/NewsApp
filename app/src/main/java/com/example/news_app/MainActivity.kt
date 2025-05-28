@@ -11,13 +11,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import com.example.news_app.news.presentation.home_screen.MainScreen
-import com.example.news_app.ui.theme.NirdhantTheme
+import com.example.news_app.ui.theme.NewsTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            NirdhantTheme {
+            NewsTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
@@ -34,7 +34,7 @@ class MainActivity : ComponentActivity() {
     @PreviewLightDark()
     @Composable
     fun NirdhantThemePreview() {
-        NirdhantTheme {
+        NewsTheme {
             MainScreen()
 
         }

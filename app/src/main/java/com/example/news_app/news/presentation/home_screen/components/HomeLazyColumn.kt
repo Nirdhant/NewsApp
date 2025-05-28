@@ -1,4 +1,4 @@
-package com.example.NewsApp.news.presentation.home_screen.components
+package com.example.news_app.news.presentation.home_screen.components
 
 
 import androidx.compose.animation.AnimatedVisibility
