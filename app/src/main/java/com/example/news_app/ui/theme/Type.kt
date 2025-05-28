@@ -1,10 +1,10 @@
-package com.example.nirdhant.ui.theme
+package com.example.news_app.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.googlefonts.Font
 import androidx.compose.ui.text.googlefonts.GoogleFont
-import com.example.nirdhant.R
+import com.example.news_app.R
 
 val provider = GoogleFont.Provider(
     providerAuthority = "com.google.android.gms.fonts",

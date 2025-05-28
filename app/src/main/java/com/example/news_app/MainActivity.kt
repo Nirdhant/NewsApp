@@ -1,4 +1,4 @@
-package com.example.nirdhant
+package com.example.news_app
 
 
 import android.os.Bundle
@@ -10,8 +10,8 @@ import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.PreviewLightDark
-import com.example.nirdhant.news.presentation.home_screen.MainScreen
-import com.example.nirdhant.ui.theme.NirdhantTheme
+import com.example.news_app.news.presentation.home_screen.MainScreen
+import com.example.news_app.ui.theme.NirdhantTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,4 +1,4 @@
-package com.example.nirdhant.news.presentation.home_screen
+package com.example.news_app.news.presentation.home_screen
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
@@ -22,9 +22,9 @@ import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
-import com.example.nirdhant.news.presentation.home_screen.components.HomeLazyColumn
-import com.example.nirdhant.news.presentation.home_screen.components.bottomNavigationItemList
-import com.example.nirdhant.ui.theme.NirdhantTheme
+import com.example.news_app.news.presentation.home_screen.components.HomeLazyColumn
+import com.example.news_app.news.presentation.home_screen.components.bottomNavigationItemList
+import com.example.news_app.ui.theme.NirdhantTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

@@ -1,4 +1,4 @@
-package com.example.nirdhant.ui.theme
+package com.example.NewsApp.ui.theme
 import androidx.compose.ui.graphics.Color
 
 val primaryLight = Color(0xFF000410)

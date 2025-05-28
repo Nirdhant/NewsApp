@@ -1,4 +1,4 @@
-package com.example.nirdhant.ui.theme
+package com.example.news_app.ui.theme
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme

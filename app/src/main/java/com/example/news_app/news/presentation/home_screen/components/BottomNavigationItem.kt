@@ -1,4 +1,4 @@
-package com.example.nirdhant.news.presentation.home_screen.components
+package com.example.NewsApp.news.presentation.home_screen.components
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home
