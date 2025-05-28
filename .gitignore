@@ -1,13 +1,24 @@
-
+# Gradle files
 .gradle/
-.idea/
-*.iml
 build/
 local.properties
+
+# IDE files
+.idea/
+*.iml
+
+# MacOS files
 .DS_Store
+
+# APK or build outputs
 *.apk
 *.ap_
 captures/
 output.json
+
+# Native build cache
 .cxx/
-app/
+
+# ignore Compose preview cache
+**/ui-tooling-preview/
+

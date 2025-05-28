@@ -10,8 +10,11 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        //Toogle Button
+        maven { url = uri("https://jitpack.io") }
     }
 }
 
+
 rootProject.name = "Nirdhant"
-include(":ToogleButton")
+include(":app")
