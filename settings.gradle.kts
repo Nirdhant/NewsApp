@@ -16,5 +16,5 @@ dependencyResolutionManagement {
 }
 
 
-rootProject.name = "Nirdhant"
+rootProject.name = "news_app"
 include(":app")

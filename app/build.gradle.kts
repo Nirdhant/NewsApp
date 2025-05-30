@@ -1,14 +1,25 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("org.jetbrains.kotlin.plugin.serialization") // Required for Ktor JSON serialization
+    id("org.jetbrains.kotlin.plugin.compose")
 }
 
+// Reading API_KEY from local.properties
+val localProperties = project.rootProject.file("local.properties").readLines()
+    .associate {
+        val (key, value) = it.split("=")
+        key to value
+    }
+
+val apiKey = localProperties["API_KEY"] ?: ""
+
 android {
-    namespace = "com.example.nirdhant"
+    namespace = "com.example.news_app"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.nirdhant"
+        applicationId = "com.example.news_app"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
@@ -21,14 +32,21 @@ android {
     }
 
     buildTypes {
+        debug {
+            buildConfigField("String", "BASE_URL", "\"https://api.mediastack.com/v1/\"")
+            buildConfigField("String", "API_KEY", "\"$apiKey\"")
+        }
         release {
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            buildConfigField("String", "BASE_URL", "\"https://api.mediastack.com/v1/\"")
+            buildConfigField("String", "API_KEY", "\"$apiKey\"")
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
@@ -37,6 +55,7 @@ android {
         jvmTarget = "17"
     }
     buildFeatures {
+        buildConfig = true
         compose = true
     }
     composeOptions {
@@ -64,12 +83,23 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
-    //google font
     implementation("androidx.compose.ui:ui-text-google-fonts:1.8.2")
 
-
-    //Toogle Button
+    // Toggle Button
     implementation("com.github.Nirdhant:ToogleButton:v1.0.0")
-    //Image Caching coil
+
+    // Coil Image Loading
     implementation("io.coil-kt:coil-compose:2.5.0")
+
+    // Koin Dependency Injection
+    implementation("io.insert-koin:koin-core:3.5.6")
+    implementation("io.insert-koin:koin-android:3.5.6")
+    implementation("io.insert-koin:koin-androidx-compose:3.5.6")
+
+    // Ktor Networking
+    implementation("io.ktor:ktor-client-core:2.3.12")
+    implementation("io.ktor:ktor-client-cio:2.3.12")
+    implementation("io.ktor:ktor-client-content-negotiation:2.3.12")
+    implementation("io.ktor:ktor-serialization-kotlinx-json:2.3.12")
+    implementation("io.ktor:ktor-client-logging:2.3.12")
 }

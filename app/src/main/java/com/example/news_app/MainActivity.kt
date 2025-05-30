@@ -24,7 +24,6 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     MainScreen()
-
                 }
             }
         }
@@ -33,7 +32,7 @@ class MainActivity : ComponentActivity() {
 
     @PreviewLightDark()
     @Composable
-    fun NirdhantThemePreview() {
+    fun NewsThemePreview() {
         NewsTheme {
             MainScreen()
 
