@@ -33,7 +33,7 @@ android {
 
     buildTypes {
         debug {
-            buildConfigField("String", "BASE_URL", "\"https://api.mediastack.com/v1/\"")
+            buildConfigField("String", "BASE_URL", "\"https://newsapi.org/v2/\"")
             buildConfigField("String", "API_KEY", "\"$apiKey\"")
         }
         release {
@@ -42,7 +42,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            buildConfigField("String", "BASE_URL", "\"https://api.mediastack.com/v1/\"")
+            buildConfigField("String", "BASE_URL", "\"https://newsapi.org/v2/\"")
             buildConfigField("String", "API_KEY", "\"$apiKey\"")
         }
     }
@@ -83,7 +83,12 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
+    //Google Fonts
     implementation("androidx.compose.ui:ui-text-google-fonts:1.8.2")
+    //Navigation
+    implementation("androidx.navigation:navigation-compose:2.9.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3")
+
 
     // Toggle Button
     implementation("com.github.Nirdhant:ToogleButton:v1.0.0")

@@ -1,4 +1,4 @@
-package com.example.news_app.news.presentation.setting_screen
+package com.example.news_app.news.presentation.news_list.setting_screen
 
 import android.content.res.Configuration
 import androidx.compose.foundation.layout.Arrangement

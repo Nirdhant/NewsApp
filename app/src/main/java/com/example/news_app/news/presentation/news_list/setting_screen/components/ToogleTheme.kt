@@ -1,4 +1,4 @@
-package com.example.news_app.news.presentation.setting_screen.components
+package com.example.news_app.news.presentation.news_list.setting_screen.components
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.runtime.Composable

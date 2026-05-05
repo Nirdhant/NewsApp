@@ -1,4 +1,4 @@
-package com.example.news_app.news.presentation.home_screen.components
+package com.example.news_app.news.presentation.news_list.home_screen.component
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home
