@@ -10,6 +10,7 @@ import com.example.news_app.news.data.mapper.toNews
 import com.example.news_app.news.domain.News
 import com.example.news_app.news.domain.NewsDataSource
 import io.ktor.client.HttpClient
+import io.ktor.client.request.get
 
 class RemoteNewsDataSource (private val httpClient: HttpClient,private val urlConstructor: UrlConstructor): NewsDataSource{
     override suspend fun getNews(): Result<List<News>, NetworkErrors> {
