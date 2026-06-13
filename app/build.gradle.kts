@@ -15,11 +15,11 @@ val localProperties = project.rootProject.file("local.properties").readLines()
 val apiKey = localProperties["API_KEY"] ?: ""
 
 android {
-    namespace = "com.example.news_app"
+    namespace = "com.example.news"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.news_app"
+        applicationId = "com.example.news"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
@@ -107,4 +107,8 @@ dependencies {
     implementation("io.ktor:ktor-client-content-negotiation:2.3.12")
     implementation("io.ktor:ktor-serialization-kotlinx-json:2.3.12")
     implementation("io.ktor:ktor-client-logging:2.3.12")
+
+    //Splash Screen
+    implementation("androidx.core:core-splashscreen:1.2.0")
+    implementation("androidx.browser:browser:1.8.0")
 }
