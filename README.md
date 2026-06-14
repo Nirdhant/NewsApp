@@ -10,6 +10,14 @@
 
 ## 📌 Overview
 
+<table align="center">
+  <tr>
+    <td><video src="https://github.com/user-attachments/assets/c4ddad73-6c71-40ba-93fd-bfd8440fd702" width="100%" autoplay loop muted playsinline controls></video></td>
+    <td><video src="https://github.com/user-attachments/assets/c7c3baa8-1986-4c1e-80dc-7f6c3f7570ec" width="100%" autoplay loop muted playsinline controls></video></td>
+    <td><video src="https://github.com/user-attachments/assets/38db1571-50d3-423b-8018-8393f2befd6a" width="100%" autoplay loop muted playsinline controls></video></td>
+  </tr>
+</table>
+
 **News App** is a modern Android news reader application that fetches live technology from external APIs and presents a smooth article-reading experience, compose-based browsing and news search. It focuses on high performance and maintainability through a reactive, clean architecture layout.
 
 ---
